@@ -25,8 +25,8 @@ This repository provides open-source for lag-based PWV estimation, including met
     quality.py     # SQI, MAD-filter, KDE-mode
     metrics.py     # lag and velocity computation
     synthetic.py   # synthetic signal generation
-tests/             # unit tests
-docs/figures/      # generated plots for README
+    tests/             # unit tests
+    docs/figures/      # generated plots for README
 
 ---
 
