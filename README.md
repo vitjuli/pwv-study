@@ -19,7 +19,11 @@ Reliable estimation of PWV from peripheral signals remains challenging due to:
 This repository provides open-source for lag-based PWV estimation, including methods for signal quality control, robust statistics, and cluster-guided beat selection.
 
 src/pwvstudy/      # core code
+
+
     pipelines.py   # four PWV pipelines
+
+
     fiducials.py   # slope-rise, curvature valleys, Gaussian refine
     clustering.py  # beat features + K-means selection
     quality.py     # SQI, MAD-filter, KDE-mode
