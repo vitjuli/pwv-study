@@ -2,10 +2,6 @@
 
 [![CI](https://github.com/vitjuli/pwv-study/actions/workflows/ci.yml/badge.svg)](https://github.com/vitjuli/pwv-study/actions/workflows/ci.yml)
 
-**Author:** Iuliia Vitiugova  
-**Keywords:** signal processing, pulse wave velocity, time series, physiology, machine learning  
-**Status:** NDA-safe, research-grade open-source study
-
 ## Motivation
 Pulse Wave Velocity (PWV) is a key biomarker of vascular stiffness. Robust lag-based estimation from peripheral signals is challenged by noise, motion artefacts and fiducial ambiguity. This repo implements **four pipelines** with SQI and robust statistics to obtain stable velocities on synthetic and public CSV signals.
 
