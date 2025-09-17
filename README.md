@@ -40,13 +40,6 @@ Public CSV format:
 - `t,ppg` (demo: distal = shift by 80 ms), or  
 - `t,ppg_prox,ppg_dist` (two-channel).
 
-## Advanced figures
-![Bland–Altman](docs/figures/bland_altman_cluster_vs_window.png)
-![Stability 0](docs/figures/stability_vs_snr_steps0.png)
-![Stability 2](docs/figures/stability_vs_snr_steps2.png)
-![Stability 4](docs/figures/stability_vs_snr_steps4.png)
-![Beat lags](docs/figures/per_beat_lag_scatter_robust.png)
-![Flow](docs/figures/pipeline_flow_cluster_guided.png)
 
 ## Repo layout
 ```
