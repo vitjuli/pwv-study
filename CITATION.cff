@@ -4,7 +4,6 @@ title: "PWV-Study: Lag-Based Vascular Velocity Pipelines (NDA-safe, research-gra
 authors:
   - family-names: Vitiugova
     given-names: Iuliia
-    orcid: "0000-0000-0000-0000"
 date-released: 2025-09-01
 version: "0.1.0"
 repository-code: "https://github.com/vitjuli/pwv-study"
