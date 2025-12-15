@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "pwv-study: Robust PWV Pipelines on Synthetic Data"
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Vitiugova
+    given-names: Iuliia
+version: 0.1.0
+license: MIT
