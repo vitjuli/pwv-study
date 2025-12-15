@@ -1,10 +1,8 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it."
-title: "PWV-Study: Lag-Based Vascular Velocity Pipelines (NDA-safe, research-grade)"
+title: "pwv-study: Robust PWV Pipelines on Synthetic Data"
+message: "If you use this software, please cite it as below."
 authors:
   - family-names: Vitiugova
     given-names: Iuliia
-date-released: 2025-09-01
-version: "0.1.0"
-repository-code: "https://github.com/vitjuli/pwv-study"
+version: 0.1.0
 license: MIT

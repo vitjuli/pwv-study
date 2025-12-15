@@ -1,13 +1,29 @@
+from __future__ import annotations
 import numpy as np
-def compute_feature_lags(prox_idx, dist_idx, fs):
-    if prox_idx.size==0 or dist_idx.size==0: return np.array([]), float('nan')
-    lags=[]; j=0
-    for i in range(len(prox_idx)):
-        p=prox_idx[i]
-        while j<len(dist_idx) and dist_idx[j]<p: j+=1
-        if j>=len(dist_idx): break
-        lags.append((dist_idx[j]-p)/fs); j+=1
-    lags=np.array(lags,float); med=float(np.median(lags)) if lags.size else float('nan'); return lags, med
-def velocity_from_lag(distance_m, lag_seconds):
-    if not np.isfinite(lag_seconds) or lag_seconds<=0: return float('nan')
-    return distance_m/lag_seconds
+from typing import Tuple
+
+def compute_transit_time(proximal_idx: np.ndarray, distal_idx: np.ndarray, fs: int) -> Tuple[np.ndarray, float]:
+    """Pair nearest distal fiducials to proximal ones and compute TT in seconds.
+    Returns (tt_array, median_tt).
+    """
+    if proximal_idx.size == 0 or distal_idx.size == 0:
+        return np.array([]), np.nan
+    tt = []
+    j = 0
+    for i in range(len(proximal_idx)):
+        p = proximal_idx[i]
+        while j < len(distal_idx) and distal_idx[j] < p:
+            j += 1
+        if j >= len(distal_idx):
+            break
+        tt.append((distal_idx[j] - p) / fs)
+        j += 1
+    tt = np.array(tt, dtype=float)
+    med = float(np.median(tt)) if tt.size else float('nan')
+    return tt, med
+
+def estimate_pwv(distance_m: float, tt_seconds: float) -> float:
+    """PWV = distance / TT (m/s)."""
+    if not np.isfinite(tt_seconds) or tt_seconds <= 0:
+        return float('nan')
+    return distance_m / tt_seconds
