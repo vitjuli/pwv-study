@@ -10,7 +10,7 @@ three pulse wave velocity processing pipelines on PPG-like signals:
 It is designed to demonstrate your ability to structure research code, ensure reproducibility,
 and communicate results as a small paper. All experiments run on **synthetic data** by default.
 
-> ⚠️ No confidential work data is included. Function and variable names are *original* to this repo.
+> No confidential work data is included. Function and variable names are *original* to this repo.
 
 ---
 
