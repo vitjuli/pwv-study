@@ -1,4 +1,4 @@
-# pwv-study — Robust PWV Pipelines on Synthetic & Public Data
+# pwv-study — PWV Pipelines on Synthetic & Public Data
 
 The current repository is not full; it will be updated in May 2026. (Sorry)
 
