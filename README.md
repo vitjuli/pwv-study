@@ -1,6 +1,8 @@
 # pwv-study — Robust PWV Pipelines on Synthetic & Public Data
 
-**Goal.** This repository provides a research-grade, NDA-safe implementation and comparison of
+The current repository is not full; it will be updated in May 2026. (Sorry)
+
+**Goal.** This repository provides a research-grade, implementation and comparison of
 three pulse wave velocity processing pipelines on PPG-like signals:
 
 - **SegmentalProcessing (RTP-like)** — windowed preprocessing and fiducial extraction.
